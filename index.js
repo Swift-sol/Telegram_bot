@@ -5,11 +5,11 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = process.env.TELEGRAM_TOKEN ;
 const url = process.env.APP_URL;
 const options = {
-    /* webHook: {
+    webHook: {
         port: process.env.PORT,
-    } */
+    } 
     // to run local node, comment webhook and uncomment polling
-    polling: true
+    //polling: true
 };
 
 // Create a bot that uses 'polling' to fetch new updates
